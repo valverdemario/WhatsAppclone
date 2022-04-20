@@ -5,11 +5,16 @@
       <map>
         <entry key="..\:/Users/Erillam/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable-v24/focus_input_email.xml" value="0.119" />
         <entry key="..\:/Users/Erillam/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable-v24/focus_input_lock.xml" value="0.119" />
+        <entry key="..\:/Users/Erillam/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable-v24/focus_input_phone.xml" value="0.1315" />
         <entry key="..\:/Users/Erillam/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable/ic_lock.xml" value="0.119" />
         <entry key="..\:/Users/Erillam/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable/ic_lock_focused.xml" value="0.119" />
+        <entry key="..\:/Users/Erillam/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable/ic_phone_focused.xml" value="0.1315" />
+        <entry key="..\:/Users/Erillam/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable/ic_phone_outline.xml" value="0.1315" />
+        <entry key="..\:/Users/Erillam/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable/ic_phone_outline_focused.xml" value="0.1315" />
         <entry key="..\:/Users/Erillam/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable/ic_user.xml" value="0.119" />
         <entry key="..\:/Users/Erillam/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable/ic_user_focused.xml" value="0.119" />
         <entry key="..\:/Users/Erillam/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable/ic_whatsapp.xml" value="0.119" />
+        <entry key="..\:/Users/Erillam/AndroidStudioProjects/WhatsAppClone/app/src/main/res/drawable/rounded_corner.xml" value="0.178" />
         <entry key="..\:/Users/Erillam/AndroidStudioProjects/WhatsAppClone/app/src/main/res/layout/activity_code_verification.xml" value="0.15260416666666668" />
         <entry key="..\:/Users/Erillam/AndroidStudioProjects/WhatsAppClone/app/src/main/res/layout/activity_main.xml" value="0.22" />
       </map>

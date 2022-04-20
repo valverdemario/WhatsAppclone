@@ -32,10 +32,52 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="horizontal">
+
+       <com.hbb20.CountryCodePicker
+               android:id="@+id/edCcp"
+               android:layout_gravity="center"
+               app:ccp_textGravity="CENTER"
+               android:gravity="center"
+               android:layout_marginTop="4dp"
+               android:layout_width="120dp"
+               android:layout_marginStart="10dp"
+               android:textAlignment="center"
+               app:ccpDialog_showPhoneCode="true"
+               android:background="@drawable/rounded_corner"
+               app:ccp_autoDetectLanguage="true"
+               app:ccp_showFullName="false"
+               app:ccp_contentColor="#cecece"
+               app:ccp_autoFormatNumber="true"
+               app:ccp_autoDetectCountry="true"
+               app:ccpDialog_searchEditTextTint="@color/white"
+               app:ccpDialog_textColor="#cecece"
+               app:ccpDialog_showFlag="true"
+               app:ccpDialog_showTitle="false"
+               app:ccpDialog_showNameCode="false"
+               app:ccp_showNameCode="false"
+               android:layout_height="59dp"/>
 
 
         <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginHorizontal="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/focus_input_phone"
+                    android:drawablePadding="5dp"
+                    android:inputType="phone"
+                    android:maxLength="14"
+                    android:hint="Teléfono" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--<com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -48,9 +90,9 @@
                     android:drawableLeft="@drawable/focus_input_email"
                     android:drawablePadding="5dp"
                     android:hint="Correo Electrónico" />
-        </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <com.google.android.material.textfield.TextInputLayout
+        <!--<com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -63,9 +105,9 @@
                     android:drawableLeft="@drawable/focus_input_lock"
                     android:drawablePadding="5dp"
                     android:hint="Contraseña" />
-        </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <TextView
+        <!--<TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -77,7 +119,7 @@
             android:text="Registrare aqui"
 
             android:textColor="@color/green_primary"
-            android:textStyle="bold"/>
+            android:textStyle="bold"/>-->
 
     </LinearLayout>
 
@@ -93,7 +135,7 @@
                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
                android:text="INICIAR SESIÓN"
                android:textColor="@color/white"
-               android:layout_marginHorizontal="20dp"
+               android:layout_marginHorizontal="10dp"
                />
        <TextView
                android:layout_width="wrap_content"
