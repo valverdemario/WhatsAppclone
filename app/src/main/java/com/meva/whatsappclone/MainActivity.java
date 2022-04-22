@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.hbb20.CountryCodePicker;
+import com.tapadoo.alerter.Alerter;
 
 public class MainActivity extends AppCompatActivity {
     MaterialButton mbLogin;
@@ -25,17 +26,27 @@ public class MainActivity extends AppCompatActivity {
         mbLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               /* Intent i = new Intent(MainActivity.this,CodeVerificationActivity.class);
-                startActivity(i, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());*/
-                Toast.makeText(MainActivity.this, edCcp.getSelectedCountryCode() +""+etPhone.getText()  , Toast.LENGTH_SHORT).show();
+
+                getData();
             }
         });
+    }
+
+    private void getData(){
+        String phone = etPhone.getText().toString();
+        String code = edCcp.getSelectedCountryCodeWithPlus().toString();
+        if(!phone.equals("")){
+                           /* Intent i = new Intent(MainActivity.this,CodeVerificationActivity.class);
+                startActivity(i, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());*/
+        }else{
+            Alerter.create(this).setTitle("Error").setText("Ingresa un número de teléfono valido").setBackgroundColorRes(R.color.black).setTextAppearance(R.style.textAlert)
+                    .show();
+        }
     }
 
     private void init(){
         mbLogin = findViewById(R.id.mBtnLogin);
         etPhone = findViewById(R.id.etPhone);
         edCcp = findViewById(R.id.edCcp);
-        etPhone.addTextChangedListener(new PhoneNumberFormattingTextWatcher());
     }
 }
