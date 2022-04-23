@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                            /* Intent i = new Intent(MainActivity.this,CodeVerificationActivity.class);
                 startActivity(i, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());*/
         }else{
-            Alerter.create(this).setTitle("Error").setText("Ingresa un número de teléfono valido").setBackgroundColorRes(R.color.black).setTextAppearance(R.style.textAlert)
+            Alerter.create(this).setTitle("Error").setText("Ingresa un número de teléfono valido").setBackgroundColorRes(R.color.red).setIcon(R.drawable.ic_error)
                     .show();
         }
     }
